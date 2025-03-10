@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg: #cb997e;
+    --border: #ddbea9;
+    --text1: #ffe8d6;
+    --text2: #b7b7a4;
+    --light: #a5a58d;
+    --dark: #6b705c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    background-color: var(--text2);
+}
+
+#puzzle-container {
+    position: relative;
+    width: min(90vw, 60vh);  /* Makes it responsive */
+    height: min(90vw, 60vh);
+    background-color: var(--dark);
+    border-radius: 8px;
+    border: 3px solid var(--border);
+    box-shadow: 0px 8px 0px var(--border);
+}
+
+.puzzle-block {
+    position: absolute;
+    width: calc(25% - 4px); /* Adjust for border */
+    height: calc(25% - 4px); /* Adjust for border */
+    background-color: var(--text1);
+    color: var(--light);
+    font-size: min(6vh, 6vw);  /* Adjusts font size based on container */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: left 0.3s ease, top 0.3s ease; /* Add slide animation */
+    border-radius: 8px;
+    border: 2px solid var(--border);
+}
+
+.puzzle-block.empty {
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+}
+#stats {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--dark);
+    text-align: center;
+}
+
+#intro-text{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text1);
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#stats div {
+    margin-bottom: 5px;
+}
+
+
+#new-game-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text1);
+    background-color: var(--dark);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-game-btn:hover {
+    background-color: var(--light);
+}
+
+#bottom-buff {
+    padding-top: 2%;
+    color: var(--dark);
+    padding-bottom: 20%;
+    font-weight: bold;
+}

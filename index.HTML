@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-text">
+        <p>Welcome to Slider Puzzle! To play, click on any block next to the empty space.
+            Once all of the blocks are arranged in sequential order, you win!
+        </p>
+        <p><br/>Try playing against friends -- you can compete to see who wins with the least amount of moves and 
+            time on the clock!
+        </p>
+    </div>
+    <div id="stats">
+        <div>Number of Moves: <span id="move-counter">0</span></div>
+        <div>Time Spent: <span id="timer">0</span> seconds</div>
+    </div>
+
+    <button id="new-game-btn">New Game</button> <!-- New Game Button -->
+
+    <div id="puzzle-container">
+        <div class="puzzle-block">1</div>
+        <div class="puzzle-block">2</div>
+        <div class="puzzle-block">3</div>
+        <div class="puzzle-block">4</div>
+        <div class="puzzle-block">5</div>
+        <div class="puzzle-block">6</div>
+        <div class="puzzle-block">7</div>
+        <div class="puzzle-block">8</div>
+        <div class="puzzle-block">9</div>
+        <div class="puzzle-block">10</div>
+        <div class="puzzle-block">11</div>
+        <div class="puzzle-block">12</div>
+        <div class="puzzle-block">13</div>
+        <div class="puzzle-block">14</div>
+        <div class="puzzle-block">15</div>
+        <div class="puzzle-block empty"></div> <!-- Empty block -->
+    </div>
+    <div id="bottom-buff">
+        <small><i>Hint: (Try pressing new game if it's looking too difficult...)</i></small>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
